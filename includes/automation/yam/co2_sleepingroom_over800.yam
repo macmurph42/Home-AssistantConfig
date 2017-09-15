@@ -1,0 +1,14 @@
+# schicke Nachrichten, wen CO2 level in Schlafzimmer ansteigt
+- alias: co2 in sleeping room over 800
+  initial_state: True
+  hide_entity: True
+  trigger:
+    platform: numeric_state
+    entity_id: sensor.netatmo_schlafzimmer_co2
+    above: 800
+  action: 
+    service: notify.macmurph42
+    data_template:
+      title: "Schlafzimmer CO2 Warnung"
+      message: "CO2 Level im Schlafzimmer hat {{ sensor.netatmo_schlafzimmer_co2 }} ppm erreicht"
+

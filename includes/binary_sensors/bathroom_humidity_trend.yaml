@@ -1,0 +1,13 @@
+  - platform: trend
+    sensors:
+      humidity_bathroom_up:
+        friendly_name: 'Humidity Bathroom increasing'
+        entity_id: sensor.netatmo_bathroom_humidity
+        device_class: gas
+#  - platform: trend
+#    sensors:
+#      humidity_bathroom_down:
+#        friendly_name: 'Humidity Bathroom decreasing'
+#        entity_id: sensor.netatmo_bathroom_humidity
+#        device_class: gas
+#        invert: Yes

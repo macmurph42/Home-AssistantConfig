@@ -1,0 +1,12 @@
+  sensors:
+    name: Sensors
+    view: yes
+    entities:
+      - binary_sensor.co2_bathroom_up
+      - binary_sensor.co2_livingroom_up
+      - binary_sensor.humidity_bathroom_up
+      - binary_sensor.humidity_livingroom_up
+      - binary_sensor.internetup
+      - binary_sensor.noise_livingroom_up
+      - binary_sensor.temperature_bathroom_up
+      - binary_sensor.temperature_livingroom_up

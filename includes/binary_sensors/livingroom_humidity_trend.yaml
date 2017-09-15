@@ -1,0 +1,13 @@
+  - platform: trend
+    sensors:
+      humidity_livingroom_up:
+        friendly_name: 'Humidity livingroom increasing'
+        entity_id: sensor.netatmo_livingroom_humidity
+        device_class: gas
+#  - platform: trend
+#    sensors:
+#      humidity_livingroom_down:
+#        friendly_name: 'Humidity livingroom decreasing'
+#        entity_id: sensor.netatmo_livingroom_humidity
+#        device_class: gas
+#        invert: Yes

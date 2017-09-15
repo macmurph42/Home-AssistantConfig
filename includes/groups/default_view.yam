@@ -1,0 +1,8 @@
+  default_view:
+    view: yes
+    entities:
+      - group.livingroom
+      - group.sleepingroom
+      - group.kitchen
+      - group.bathroom
+      - group.sensors

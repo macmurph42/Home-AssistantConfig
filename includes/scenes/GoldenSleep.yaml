@@ -1,0 +1,53 @@
+  - name: GoldenSleep
+    entities:
+      light.Yin:
+        state: on
+        xy_color: [0.4947,0.472] # Gold
+        brightness: 200
+        transition: 1800 # 30 minutes
+      light.hue_go_1:
+        state: on
+        xy_color: [0.4947,0.472] # Gold
+        brightness: 200
+        transition: 1800 # 30 minutes
+      light.livingcolors_schreibtisch_links:
+        state: on
+        xy_color: [0.5951,0.3872] # Dark Orange
+        brightness: 132
+        transition: 1800 # 30 minutes
+      light.livingcolors_schreibtisch:
+        state: on
+        xy_color: [0.5951,0.3872] # Dark Orange
+        brightness: 132
+        transition: 1800 # 30 minutes
+      light.hue_go_2:
+        state: on
+        xy_color: [0.5614,0.4156] # Orange
+        brightness: 132
+        transition: 1800 # 30 minutes
+      light.reflektor_living_room:
+        state: on
+        xy_color: [0.5951,0.3872] # Dark Orange
+        brightness: 132
+        transition: 1800 # 30 minutes
+      light.schlafzimmer:
+        state: on
+        xy_color: [0.5951,0.3872] # Dark Orange
+        brightness: 132
+        transition: 1800 # 30 minutes
+      light.nachtisch:
+        state: on
+        xy_color: [0.4947,0.472] # Gold
+        brightness: 200
+        transition: 1800 # 30 minutes
+      light.reflektor_schlafzimmer:
+        state: on
+        xy_color: [0.4947,0.472] # Gold
+        brightness: 200
+        transition: 1800 # 30 minutes
+      light.livingcolors_beistelltisch:
+        state: on
+        xy_color: [0.4947,0.472] # Gold
+        brightness: 200
+        transition: 1800 # 30 minutes
+

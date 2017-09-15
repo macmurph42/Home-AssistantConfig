@@ -1,0 +1,13 @@
+  - platform: trend
+    sensors:
+      noise_livingroom_up:
+        friendly_name: 'noise livingroom increasing'
+        entity_id: sensor.netatmo_livingroom_noise
+        device_class: sound
+#  - platform: trend
+#    sensors:
+#      noise_livingroom_down:
+#        friendly_name: 'noise livingroom decreasing'
+#        entity_id: sensor.netatmo_livingroom_noise
+#        device_class: sound
+#        invert: Yes

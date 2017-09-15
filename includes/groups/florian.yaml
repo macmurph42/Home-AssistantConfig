@@ -1,0 +1,7 @@
+  florian:
+    name: Florian
+    entities:
+      - device_tracker.bellroy
+      - device_tracker.discovery
+      - device_tracker.heart
+      - device_tracker.flo

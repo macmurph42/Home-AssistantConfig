@@ -1,0 +1,28 @@
+- alias: 'Morning Show'
+  initial_state: True
+  hide_entity: False
+  trigger:
+    #platform: sun
+    #event: 'sunrise'
+    #offset: '-0:30:00'
+
+    platform: time
+    # When 'after' is used, you cannot also match on hour, minute, seconds.
+    # Military time format.
+    at: '6:29:00'
+
+  condition: 
+    condition: state
+    entity_id: group.florian
+    #entity_id: device_tracker.70700d106398
+    state: 'home'
+
+  action:
+    - service: scene.turn_on
+      entity_id: scene.GoldenSun
+    - service: scene.turn_on
+      entity_id: scene.GoldenSleep
+    - service: switch.turn_on
+      entity_id: switch.itube_amp
+    - service: switch.turn_on
+      entity_id: switch.macmini

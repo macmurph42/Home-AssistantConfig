@@ -1,0 +1,14 @@
+# iPad Air: 7481140cba2b
+- alias: iPad Air away
+  initial_state: True
+  hide_entity: False
+  trigger:
+    platform: state
+    entity_id: device_tracker.7481140cba2b
+    from: 'home'
+    to: 'not_home'
+  action:
+    service: notify.macmurph42
+    data_template:
+      title: "iPad Air abgemeldet."
+      message: "iPad Air nicht mehr zu Hause angemeldet."

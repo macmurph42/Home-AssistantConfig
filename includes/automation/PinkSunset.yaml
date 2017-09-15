@@ -1,0 +1,28 @@
+- alias: 'Pink Sunset Show'
+  initial_state: True
+  hide_entity: False
+  trigger:
+    #platform: sun
+    #event: 'sunset'
+    #offset: '4:00:00'
+
+    platform: time
+    # When 'after' is used, you cannot also match on hour, minute, seconds.
+    # Military time format.
+    at: '21:30:00'
+
+  condition: 
+    condition: state
+    entity_id: group.florian
+    #entity_id: device_tracker.70700d106398
+    state: 'home'
+
+  action:
+    - service: notify.macmurph42
+      data_template:
+        title: "Sunset"
+        message: "The Pink Sunset Show starts now."
+    - service: scene.turn_on
+      entity_id: scene.PinkSunset
+    - service: scene.turn_on
+      entity_id: scene.PinkSleepSunset

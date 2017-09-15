@@ -1,0 +1,8 @@
+  - name: light_pink_huego 
+    entities: 
+      light.hue_go_1:
+        state: on
+        transition: 300
+        xy_color: [0.31, 0.24]
+        color_temp: 290
+        brightness: 138

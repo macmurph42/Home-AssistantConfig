@@ -1,0 +1,23 @@
+- alias: iPhone7 found
+  initial_state: True
+  hide_entity: False
+  trigger:
+    platform: state
+    entity_id: device_tracker.70700d106398
+    from: 'not_home'
+    to: 'home'
+  action:
+    - service: notify.macmurph42
+      data_template:
+        title: "iPhone found."
+        message: "iPhone7+ found after nmap scanla All devices are turned on. Welcome!"
+    - service: switch.turn_on
+      entity_id: switch.macmini
+    - service: switch.turn_on
+      entity_id: switch.itube_amp
+    - service: switch.turn_on
+      entity_id: switch._schlafzimmer
+    - service: light.turn_on
+      entity_id: group.lights_livingroom
+    - service: light.turn_on
+      entity_id: group.lights_sleepingroom

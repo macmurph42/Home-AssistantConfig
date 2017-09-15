@@ -1,0 +1,14 @@
+  lights_livingroom:
+    name: lights livingroom
+    view: false
+    entities:
+      - light.livingcolors_wohn_fensterbank_
+      - light.ikea_stehlampe_
+      - light.sofa
+      - light.Yang
+      - light.livingcolors_eck_kommode
+      - light.polera
+      - light.tischlampe
+      - light.livingcolors_esstisch
+      - light.kommode_rechts
+      - light.kommode_links

@@ -1,0 +1,35 @@
+  livingroom:
+    name: Living
+    view: yes
+    entities:
+      - sensor.netatmo_livingroom_co2
+      - sensor.netatmo_livingroom_humidity
+      - sensor.netatmo_livingroom_noise
+      - sensor.netatmo_livingroom_pressure
+      - sensor.netatmo_livingroom_temperature
+      - device_tracker.54e43ae8859c # Apple Airport Express
+      - device_tracker.08863bc95e15 # Belkin Wemo Switch iTube AMP
+      - device_tracker.04e5364362f # friendly_name: Apple iPad 4 hidden: true
+      - device_tracker.08863bc95e15 # friendly_name: Belkin Wemo Switch iTube AMP
+      - device_tracker.24a2e1e80b1c # friendly_name: Apple Time Capsule AFP
+      - device_tracker.54e43ae8859c # friendly_name: Apple Airport Express
+      - device_tracker.70ee5001c378 # friendly_name: Netatmo1
+      - device_tracker.70ee50058c3c # friendly_name: Netatmo2
+      - scene.GoldenSun
+      - scene.PinkSunset
+      - scene.OrangeSunset
+      - scene.PurpleLastHooray
+      - scene.OrangeLastHooray
+      - scene.MoonRises
+      - scene.MidnightMoon
+      - light.livingcolors_wohn_fensterbank_
+      - light.ikea_stehlampe_
+      - light.sofa
+      - light.Yang
+      - light.livingcolors_eck_kommode
+      - light.polera
+      - light.tischlampe
+      - light.livingcolors_esstisch
+      - light.kommode_rechts
+      - light.kommode_links
+      - switch.itube_amp

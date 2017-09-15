@@ -1,0 +1,10 @@
+- alias: 'When HueGo turns to green, slowly turn back color to light pink'
+  initial_state: True
+  hide_entity: False
+  trigger:
+    platform: state
+    entity_id: light.hue_go_1
+    state: 'on'
+  action:
+    - service: scene.turn_on
+      entity_id: scene.light_pink_huego

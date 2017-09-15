@@ -1,0 +1,13 @@
+- alias: loud living
+  initial_state: True
+  hide_entity: False
+  trigger:
+    platform: numeric_state
+    entity_id: sensor.netatmo_livingroom_noise
+    above: 60
+  action:
+    service: notify.macmurph42
+    data_template:
+      title: "Wohnzimmer Lautstaerke"
+      message: "Geraeuschpegel im Wohnzimmer ueber {{ sensor.sensor.netatmo_livingroom_noise.state }} db gestiegen"
+

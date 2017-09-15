@@ -1,0 +1,8 @@
+  - platform: yahoo_finance
+    symbols:
+      - NTAP
+      - AAPL
+      - AMZN
+      - JNPR
+      - GOOG
+      - FB

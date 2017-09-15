@@ -1,0 +1,23 @@
+  timed_lamp: 
+    alias: "Turn on lamp and set timer" 
+    sequence: 
+      # Cancel ev. old timers 
+      - service: script.turn_off 
+        data: 
+          entity_id: script.timer_off 
+      - service: switch.turn_on
+        data:
+          entity_id: switch._schlafzimmer
+      # Set new timer 
+      - service: script.turn_on 
+        data: 
+          entity_id: script.timer_off 
+
+  timer_off: 
+    alias: "Turn off lamp after 3 minutes" 
+    sequence: 
+      - delay: 
+          minutes: 3
+      - service: switch.turn_off 
+        data: 
+          entity_id: switch._schlafzimmer

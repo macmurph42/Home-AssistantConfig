@@ -1,0 +1,14 @@
+  - platform: trend
+    sensors:
+      co2_bathroom_up:
+        friendly_name: 'CO2 Bathroom increasing'
+        entity_id: sensor.netatmo_bathroom_co2
+        device_class: gas
+#  - platform: trend
+#    sensors:
+#      co2_bathroom_down:
+#        friendly_name: 'CO2 Bathroom decreasing'
+#        entity_id: sensor.netatmo_bathroom_co2
+#        device_class: gas
+#        invert: Yes
+#        hidden: Yes

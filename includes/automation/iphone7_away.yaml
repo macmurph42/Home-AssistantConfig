@@ -1,0 +1,24 @@
+# iPhone7+ 70700d106398
+- alias: iPhone7 away
+  initial_state: True
+  hide_entity: False
+  trigger:
+    platform: state
+    entity_id: device_tracker.70700d106398
+    from: 'home'
+    to: 'not_home'
+  action:
+    - service: notify.macmurph42
+      data_template: 
+        title: "iPhone 7+ not found"
+        message: "IPhone 7+ not found on nmap scan. Turning off all devices. Goodbye!"
+    - service: switch.turn_off
+      entity_id: switch.macmini
+    - service: switch.turn_off
+      entity_id: switch.itube_amp
+    - service: switch.turn_off
+      entity_id: switch.kitchen
+    - service: switch.turn_off
+      entity_id: switch._schlafzimmer
+    - service: light.turn_off
+      entity_id: group.all_lights

@@ -1,0 +1,15 @@
+  lights_sleepingroom:
+    name: lights sleepingroom
+    view: false
+    entities:
+      - light.reflektor_living_room
+      - light.hue_go_1
+      - light.schlafzimmer
+      - light.reflektor_schlafzimmer
+      - light.livingcolors_schreibtisch_links
+      - light.livingcolors_schreibtisch
+      - light.livingcolors_beistelltisch
+      - light.nachtisch
+      - light.Yin
+      - light.hue_go_2
+

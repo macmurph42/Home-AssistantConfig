@@ -1,0 +1,52 @@
+  - name: OrangeLastHooray
+    entities:
+      light.livingcolors_esstisch:
+        state: on
+        xy_color: [0.2206,0.1484] # Dark Slate Blue
+        brightness: 125
+        transition: 1800 # 30 minutes
+      light.polera:
+        state: on
+        xy_color: [0.139,0.081] # Blue
+        brightness: 100
+        transition: 1800 # 30 minutes
+      light.livingcolors_wohn_fensterbank_:
+        state: on
+        xy_color: [0.1649,0.1338] # Royal Blue 
+        brightness: 100
+        transition: 1800 # 30 minutes
+      light.tischlampe:
+        state: on
+        xy_color: [0.139,0.081] # Medium Blue
+        brightness: 200
+        transition: 1800 # 30 minutes
+      light.Yang:
+        state: on
+        xy_color: [0.1585,0.0884] # Midnight Blue 
+        brightness: 150
+        transition: 1800 # 30 minutes
+      light.livingcolors_eck_kommode:
+        state: on
+        xy_color: [0.6112,0.3261] # Tomato 
+        brightness: 150
+        transition: 1800 # 30 minutes
+      light.sofa:
+        state: on
+        xy_color: [0.7,0.2986] # Red
+        brightness: 154
+        transition: 1800 # 30 minutes
+      light.kommode_links:
+        state: on
+        xy_color: [0.6112,0.3261] # Tomato 
+        brightness: 100
+        transition: 1800 # 30 minutes
+      light.kommode_rechts:
+        state: on
+        xy_color: [0.6726,0.3217] # Orange Red
+        brightness: 132
+        transition: 1800 # 30 minutes
+      light.ikea_stehlampe_:
+        state: on
+        xy_color: [0.1585,0.0884] # Midnight Blue 
+        brightness: 150
+        transition: 1800 # 30 minutes

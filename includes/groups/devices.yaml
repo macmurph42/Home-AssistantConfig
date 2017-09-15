@@ -1,0 +1,26 @@
+  devices:
+    name: Devices
+    view: yes
+    entities:
+      - device_tracker.001788215ce1 # friendly_name: Philips Hue Bridge
+      - device_tracker.0024e42138ee # friendly_name: 0024e42138ee hidden: true
+      - device_tracker.0080e1b42dbf # friendly_name: 0080e1b42dbf hidden: true
+      - device_tracker.04e5364362fc # friendly_name: Apple iPad 4 hidden: true
+      - device_tracker.08863bc80699 # friendly_name: Belkin Wemo Motion
+      - device_tracker.08863bc95e15 # friendly_name: Belkin Wemo Switch iTube AMP
+      - device_tracker.0c5101ed494c # friendly_name: Desktop Airport Express
+      - device_tracker.24a2e1e80b1c # friendly_name: Apple Time Capsule AFP
+      - device_tracker.54e43ae8859c # friendly_name: Apple Airport Express
+      - device_tracker.5e15df6e359f # friendly_name: eBlocker
+      - device_tracker.70700d106398 # friendly_name: Apple iPhone7+
+      - device_tracker.70ee5001c378 # friendly_name: Netatmo1
+      - device_tracker.70ee50058c3c # friendly_name: Netatmo2
+      - device_tracker.7481140cba2b # friendly_name: Apple iPad Air
+      - device_tracker.7831c1be2320 # friendly_name: Apple MacBook Pro 13-inch
+      - device_tracker.80c6abcf1762 # friendly_name: Thomson Router
+      - device_tracker.80e650020784 # friendly_name: 80e650020784
+      - device_tracker.94103e412365 # friendly_name: Belkin Wemo Switch iTube Fatman
+      - device_tracker.94103e412791 # friendly_name: Belkin Wemo Switch Drobo
+      - device_tracker.94103e412809 # friendly_name: Belkin Wemo Switch Thomson Router
+      - device_tracker.e0accb3a20f1 # friendly_name: e0accb3a20f1
+      - device_tracker.ec1a59ef41f5 # friendly_name: Belkin Wemo Switch Schlafzimmer

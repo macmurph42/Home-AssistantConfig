@@ -1,0 +1,13 @@
+  - platform: trend
+    sensors:
+      temperature_bathroom_up:
+        friendly_name: 'Temperature Bathroom increasing'
+        entity_id: sensor.netatmo_bathroom_temperature
+        device_class: heat
+#  - platform: trend
+#    sensors:
+#      temperature_bathroom_down:
+#        friendly_name: 'Temperature Bathroom decreasing'
+#        entity_id: sensor.netatmo_bathroom_temperature
+#        device_class: cold
+#        invert: Yes

@@ -1,0 +1,14 @@
+- alias: iPad4 found
+  initial_state: True
+  hide_entity: False
+  trigger:
+    platform: state
+    entity_id: device_tracker.04e5364362fc
+    from: 'not_home'
+    to: 'home'
+  action:
+    service: notify.macmurph42
+    data_template:
+      title: "iPad 4 gefunden."
+      message: "iPad 4 ist jetzt zu Hause angemeldet."
+

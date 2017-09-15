@@ -1,0 +1,8 @@
+  bathroom:
+    name: Bath
+    view: yes
+    entities:
+      - light.toilette
+      - light.dusche
+      - light.badezimmer_vorraum
+

@@ -1,0 +1,52 @@
+  - name: PinkSunset
+    entities: 
+      light.livingcolors_esstisch:
+        state: on
+        xy_color: [0.2742,0.1326] # Dark Violet
+        brightness: 100
+        transition: 1800 # 30 minutes
+      light.polera:
+        state: on
+        xy_color: [0.245,0.1214] # Blue Violet
+        brightness: 125 
+        transition: 1800 # 30 minutes
+      light.livingcolors_wohn_fensterbank_:
+        state: on
+        xy_color: [0.3644,0.2133] # Violet 
+        brightness: 100
+        transition: 1800 # 30 minutes
+      light.tischlampe:
+        state: on
+        xy_color: [0.4682,0.2452] # Hot Pink 
+        brightness: 200
+        transition: 1800 # 30 minutes
+      light.Yang:
+        state: on
+        xy_color: [0.4682,0.2452] # Hot Pink 
+        brightness: 200
+        transition: 1800 # 30 minutes
+      light.sofa:
+        state: on
+        xy_color: [0.4682,0.2452] # Hot Pink 
+        brightness: 200
+        transition: 1800 # 30 minutes
+      light.livingcolors_eck_kommode:
+        state: on
+        xy_color: [] # Dark Orchid
+        brightness: 132
+        transition: 1800 # 30 minutes
+      light.kommode_links:
+        state: on
+        xy_color: [0.3787,0.1724] # Fuchsia
+        brightness: 100
+        transition: 1800 # 30 minutes
+      light.kommode_rechts:
+        state: on
+        xy_color: [i0.5454,0.2359] # Deep Pink
+        brightness: 132
+        transition: 1800 # 30 minutes
+      light.ikea_stehlampe_:
+        state: on
+        xy_color: [0.2742,0.1326] # Dark Violet
+        brightness: 100
+        transition: 1800 # 30 minutes

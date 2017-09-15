@@ -1,0 +1,10 @@
+  kitchen:
+    name: Kitchen
+    view: yes
+    entities: 
+      - light.entry
+      - light.kitchenlight
+      - light.kitchen_table
+      - device_tracker.5e15df6e359f # eBlocker
+      - device_tracker.001788215ce1 # Philips Hue Bridge 
+      - device_tracker.24a2e1e80b1c # Apple Time Capsule AFP 

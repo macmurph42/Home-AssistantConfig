@@ -1,0 +1,82 @@
+- alias: 'Flo Away'
+  condition:
+    condition: state
+    entity_id: input_boolean.flo_home
+    state: 'on'
+
+  trigger:
+    - platform: state
+      entity_id: device_tracker.70700d106398
+      state: 'not_home'
+      for:
+        minutes: 30
+
+    - platform: state
+      entity_id: device_tracker.bellroy
+      state: 'not_home'
+      for:
+        minutes: 30
+
+    - platform: state
+      entity_id: device_tracker.heart
+      state: 'not_home'
+      for:
+        minutes: 30
+
+    - platform: state
+      entity_id: device_tracker.discovery
+      state: 'not_home'
+      for:
+        minutes: 30
+
+  action:
+    - service: homeassistant.turn_off
+      entity_id: input_boolean.flo_home
+    - service: light.turn_off
+      entity_id: group.all_lights
+    - service: switch.turn_off
+      entity_id: switch._schlafzimmer
+    - service: switch.turn_off
+      entity_id: switch.macmini
+    - service: switch.turn_off
+      entity_id: switch.thomsonrouter
+    - service: switch.turn_off
+      entity_id: switch.drobo
+    - service: switch.turn_off
+      entity_id: switch.itube_amp
+    - service: switch.turn_off
+      entity_id: switch.kitchen
+
+- alias: 'Flo Home'
+  condition:
+    condition: state
+    entity_id: input_boolean.flo_home
+    state: 'off'
+
+  trigger:
+    - platform: state
+      entity_id: device_tracker.70700d106398
+      state: 'home'
+
+    - platform: state
+      entity_id: device_tracker.bellroy
+      state: 'home'
+
+    - platform: state
+      entity_id: device_tracker.heart
+      state: 'home'
+
+    - platform: state
+      entity_id: device_tracker.discovery
+      state: 'home'
+
+  action:
+    - service: homeassistant.turn_on
+      entity_id: input_boolean.flo_home
+    - service: light.turn_on
+      entity_id: group.all_lights
+    - service: switch.turn_on
+      entity_id: switch.macmini
+    - service: switch.turn_on
+      entity_id: switch.itube_amp
+    - service: switch.turn_on

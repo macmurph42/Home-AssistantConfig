@@ -1,0 +1,13 @@
+  - platform: trend
+    sensors:
+      co2_livingroom_up:
+        friendly_name: 'CO2 livingroom increasing'
+        entity_id: sensor.netatmo_livingroom_co2
+        device_class: gas
+#  - platform: trend
+#    sensors:
+#      co2_livingroom_down:
+#        friendly_name: 'CO2 livingroom decreasing'
+#        entity_id: sensor.netatmo_livingroom_co2
+#        device_class: gas
+#        invert: Yes

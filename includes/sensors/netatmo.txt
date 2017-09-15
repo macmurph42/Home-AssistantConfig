@@ -1,0 +1,60 @@
+  - platform: netatmo
+#    station: Wagenweg
+#    modules:
+#      Outdoor:
+#        - temperature
+#        - pressure
+#        - humidity
+#        - min_temp
+#        - max_temp
+#        - wifi_status
+#        - battery_vp
+#      bathroom:
+#        - temperature
+#        - co2
+#        - pressure
+#        - humidity
+#        - min_temp
+#        - max_temp
+#        - wifi_status
+#        - battery_vp
+#      kitchen:
+#        - temperature
+#        - co2
+#        - pressure
+#        - humidity
+#        - min_temp
+#        - max_temp
+#        - wifi_status
+#        - battery_vp
+#      livingroom:
+#        - temperature
+#        - co2
+#        - pressure
+#        - noise
+#        - humidity
+#        - min_temp
+#        - max_temp
+#        - wifi_status
+#        - battery_vp
+  - platform: netatmo
+    station: WagenwegBack
+    modules:
+      Outdoor:
+        - temperature
+        - pressure
+        - humidity
+        - min_temp
+        - max_temp
+        - wifi_status
+        - battery_vp
+      sleepingroom:
+        - temperature
+        - co2
+        - pressure
+        - noise
+        - humidity
+        - min_temp
+        - max_temp
+        - wifi_status
+        - battery_vp

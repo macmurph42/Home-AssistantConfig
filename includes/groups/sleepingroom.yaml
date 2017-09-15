@@ -1,0 +1,22 @@
+  sleepingroom:
+    name: Sleep
+    view: yes
+    entities:
+      - scene.GoldenSleep
+      - scene.OrangeSleepSunset
+      - scene.OrangeSleepLastHooray
+      - light.reflektor_living_room
+      - light.hue_go_1
+      - light.schlafzimmer
+      - light.reflektor_schlafzimmer
+      - light.livingcolors_schreibtisch_links
+      - light.livingcolors_schreibtisch
+      - light.livingcolors_beistelltisch
+      - light.nachtisch
+      - light.Yin
+      - light.hue_go_2
+      - switch._schlafzimmer
+      - switch.drobo
+      - switch.macmini
+      - device_tracker.94103e412791 # Belkin Wemo Switch Drobo
+      - device_tracker.ec1a59ef41f5 # Belkin Wemo Switch Schlafzimmer

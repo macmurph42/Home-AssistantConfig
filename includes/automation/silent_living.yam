@@ -1,0 +1,14 @@
+# schicke Nachricht wenn Lautstaerke unter 40db im Wohnzimmer erkannt wird
+- alias: silent living
+  initial_state: True
+  hide_entity: False
+  trigger:
+    platform: numeric_state
+    entity_id: sensor.netatmo_livingroom_noise 
+    below: 40
+  action:
+    service: notify.macmurph42
+    data_template:
+      title: "Wohnzimmer Lautstaerke"
+      message: "Geraeuschpegel im Wohnzimmer unter {{ sensor.sensor.netatmo_livingroom_noise.state }} db gefallen"
+

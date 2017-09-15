@@ -1,0 +1,11 @@
+- alias: Turn on iTube Amp Switch when Airtunes Speaker is enabled
+  initial_state: True
+  hide_entity: False
+  trigger:
+    platform: state
+    entity_id: media_player.florians_airport_express_airtunes_speaker
+    from: 'off'
+    to: 'on'
+  action:
+    - service: switch.turn_on
+      entity_id: switch.itube_amp

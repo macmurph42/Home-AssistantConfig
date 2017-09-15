@@ -1,0 +1,13 @@
+
+- alias: Schlafzimmer Lampe einschalten wenn Bewegung
+  initial_state: True
+  hide_entity: False
+  trigger: 
+    - platform: state 
+      entity_id: binary_sensor.wemo_motion 
+      to: 'on' 
+  action: 
+    service: homeassistant.turn_on 
+    entity_id: script.timed_lamp 
+
+

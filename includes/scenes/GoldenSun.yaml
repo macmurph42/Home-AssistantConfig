@@ -1,0 +1,52 @@
+  - name: GoldenSun
+    entities:
+      light.livingcolors_esstisch:
+        state: on
+        xy_color: [0.5951,0.3872] # Dark Orange
+        brightness: 132
+        transition: 1800 # 30 minutes
+      light.polera:
+        state: on
+        xy_color: [0.5951,0.3872] # Dark Orange
+        brightness: 132
+        transition: 1800 # 30 minutes
+      light.livingcolors_wohn_fensterbank_:
+        state: on
+        xy_color: [0.5951,0.3872] # Dark Orange
+        brightness: 132
+        transition: 1800 # 30 minutes
+      light.tischlampe:
+        state: on
+        xy_color: [0.4947,0.472] # Gold
+        brightness: 200
+        transition: 1800 # 30 minutes
+      light.Yang:
+        state: on
+        xy_color: [0.4947,0.472] # Gold
+        brightness: 200
+        transition: 1800 # 30 minutes
+      light.livingcolors_eck_kommode:
+        state: on
+        xy_color: [0.5951,0.3872] # Dark Orange
+        brightness: 132
+        transition: 1800 # 30 minutes
+      light.sofa:
+        state: on
+        xy_color: [0.5951,0.3872] # Dark Orange
+        brightness: 132
+        transition: 1800 # 30 minutes
+      light.kommode_links:
+        state: on
+        xy_color: [0.5136,0.4444] # Goldenrod
+        brightness: 132
+        transition: 1800 # 30 minutes
+      light.kommode_rechts:
+        state: on
+        xy_color: [0.5104,0.3826] # Sandy Brown
+        brightness: 132
+        transition: 1800 # 30 minutes
+      light.ikea_stehlampe_:
+        state: on
+        xy_color: [0.5951,0.3872] # Dark Orange
+        brightness: 132
+        transition: 1800 # 30 minutes

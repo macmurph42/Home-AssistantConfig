@@ -1,0 +1,102 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets
+  latitude: 52.3736
+  longitude: 4.6284
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: -1
+  # metric for Metric, imperial for Imperial
+  unit_system: metric
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: Europe/Amsterdam
+
+# Show links to resources in log and frontend
+introduction:
+
+# Enables the frontend
+frontend:
+
+# Enables configuration UI
+config:
+
+media_player:
+  - platform: itunes
+    host: 192.168.0.13
+
+#light:
+#  platform: hue
+#  host: 192.168.0.16
+  #allow_unreachable: true
+
+http:
+  # Uncomment this to add a password (recommended!)
+  api_password: !secret http_password
+  # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+  # base_url: example.duckdns.org:8123
+
+# Checks for available updates
+# Note: This component will send some information about your system to
+# the developers to assist with development of Home Assistant.
+# For more information, please see:
+# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
+updater:
+  # Optional, allows Home Assistant developers to focus on popular components.
+  # include_used_components: true
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time
+history:
+
+# View all events in a logbook
+logbook:
+
+notify:
+  name: macmurph42
+  platform: pushover
+  api_key: !secret pushover_api_key
+  user_key: !secret pushover_user_key
+
+netatmo:
+  api_key: !secret netatmo_api_key
+  secret_key: !secret netatmo_secret_key
+  username: !secret netatmo_username
+  password: !secret netatmo_password
+  discovery: True
+
+device_tracker:
+  - platform: nmap_tracker
+    hosts: 192.168.0.0/24
+    home_interval: 30  
+    interval_seconds: 10
+    consider_home: 1080
+    track_new_devices: yes 
+    exclude:
+      - 192.168.0.26
+  - platform: trackr
+    username: !secret trackr_username
+    password: !secret trackr_password
+
+# Track the sun
+sun:
+
+# Weather prediction
+#sensor:
+#  - platform: yr
+
+# Text to speech
+tts:
+  - platform: google
+
+group: !include_dir_merge_named includes/groups 
+binary_sensor: !include_dir_merge_list includes/binary_sensors
+sensor: !include_dir_merge_list includes/sensors
+scene: !include_dir_merge_list includes/scenes
+automation: !include_dir_merge_list includes/automation
+script: !include_dir_merge_named includes/scripts
+

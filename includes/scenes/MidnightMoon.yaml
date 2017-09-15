@@ -1,0 +1,53 @@
+  - name: MidnightMoon
+    entities:
+      light.livingcolors_esstisch:
+        state: on
+        xy_color: [0.2206,0.1484] # Dark Slate Blue
+        brightness: 75
+        transition: 1800 # 30 minutes
+      light.polera:
+        state: on
+        xy_color: [0.3227,0.329] # Silver
+        brightness: 100
+        transition: 1800 # 30 minutes
+      light.livingcolors_wohn_fensterbank_:
+        state: on
+        xy_color: [0.1585,0.0884] # Midnight Blue
+        brightness: 100
+        transition: 1800 # 30 minutes
+      light.tischlampe:
+        state: on
+        xy_color: [0.139,0.081] # Medium Blue
+        brightness: 100
+        transition: 1800 # 30 minutes
+      light.Yang:
+        state: on
+        xy_color: [0.139,0.081] # Medium Blue
+        brightness: 100
+        transition: 1800 # 30 minutes
+      light.livingcolors_eck_kommode:
+        state: on
+        xy_color: [0.1585,0.0884] # Midnight Blue
+        brightness: 150
+        transition: 1800 # 30 minutes
+      light.sofa:
+        state: on
+        xy_color: [0.1585,0.0884] # Midnight Blue
+        brightness: 150
+        transition: 1800 # 30 minutes
+      light.kommode_links:
+        state: on
+        xy_color: [0.2206,0.1484] # Dark Slate Blue
+        brightness: 75
+        transition: 1800 # 30 minutes
+      light.kommode_rechts:
+        state: on
+        xy_color: [0.1585,0.0884] # Midnight Blue
+        brightness: 100
+        transition: 1800 # 30 minutes
+      light.ikea_stehlampe_:
+        state: on
+        xy_color: [0.1585,0.0884] # Midnight Blue 
+        brightness: 150
+        transition: 1800 # 30 minutes
+

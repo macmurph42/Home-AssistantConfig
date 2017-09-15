@@ -1,0 +1,5 @@
+  - platform: haveibeenpwned
+    email:
+      - macmurph42@gmail.com
+      - macmurph42@me.com
+      - macmurph42@icloud.com

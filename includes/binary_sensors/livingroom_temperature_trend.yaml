@@ -1,0 +1,13 @@
+  - platform: trend
+    sensors:
+      temperature_livingroom_up:
+        friendly_name: 'Temperature livingroom increasing'
+        entity_id: sensor.netatmo_livingroom_temperature
+        device_class: heat
+#  - platform: trend
+#    sensors:
+#      temperature_livingroom_down:
+#        friendly_name: 'Temperature livingroom decreasing'
+#        entity_id: sensor.netatmo_livingroom_temperature
+#        device_class: cold
+#        invert: Yes

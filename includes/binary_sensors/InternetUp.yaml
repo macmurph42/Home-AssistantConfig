@@ -1,0 +1,6 @@
+  - platform: command_line
+    name: InternetUp 
+    command: 'nmap -p 80 scanme.nmap.org | grep open | wc -l'
+    device_class: connectivity
+    payload_on: 1
+    payload_off: 0
