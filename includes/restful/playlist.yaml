@@ -1,0 +1,24 @@
+  bestofchorus_playlist:
+      url: http://192.168.0.13:8181/playlists/bestofchorus/play
+      method:  PUT
+      payload: '{"shuffle":true}'
+  mozart225_playlist:
+      url: 'http://192.168.0.13:8181/playlists/mozart-225/play'
+      method: PUT
+      payload: '{"shuffle":true}'
+  bestofmorning_playlist:
+      url: http://192.168.0.13:8181/playlists/bestofmorning/play
+      method:  PUT
+      payload: '{"shuffle":true}'
+  bestofkarljenkins_playlist:
+      url: http://192.168.0.13:8181/playlists/bestofkarljenkins/play
+      method:  PUT
+      payload: '{"shuffle":true}'
+  bestofmovies_playlist:
+      url: http://192.168.0.13:8181/playlists/bestofmovies/play
+      method:  PUT
+      payload: '{"shuffle":true}'
+  bestofsleep_playlist:
+      url: http://192.168.0.13:8181/playlists/bestofsleep/play
+      method:  PUT
+      payload: '{"shuffle":true}'

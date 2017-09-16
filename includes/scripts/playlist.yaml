@@ -1,0 +1,29 @@
+  bestofchorus_shuffle:
+    alias: "BestOf Chorus Shuffle"
+    sequence:
+      - service: rest_command.bestofchorus_playlist
+
+  mozart225_shuffle:
+    alias: "Mozart 225 Shuffle"
+    sequence:
+      - service: rest_command.mozart225_playlist
+
+  bestofmorning_shuffle:
+    alias: "BestOf Morning Shuffle"
+    sequence:
+      - service: rest_command.bestofmorning_playlist
+
+  bestofkarljenkins_shuffle:
+    alias: "BestOf Karl Jenkins Shuffle"
+    sequence:
+      - service: rest_command.bestofkarljenkins_playlist
+
+  bestofmovies_shuffle:
+    alias: "BestOf Movies Shuffle"
+    sequence:
+      - service: rest_command.bestofmovies_playlist
+
+  bestofsleep_shuffle:
+    alias: "BestOf Sleep Shuffle"
+    sequence:
+      - service: rest_command.bestofsleep_playlist

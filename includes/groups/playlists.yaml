@@ -1,0 +1,9 @@
+  playlists:
+    name: Playlists
+    entities:
+      - script.bestofchorus_shuffle
+      - script.mozart225_shuffle
+      - script.bestofmorning_shuffle
+      - script.bestofkarljenkins_shuffle
+      - script.bestofmovies_shuffle
+      - script.bestofsleep_shuffle
