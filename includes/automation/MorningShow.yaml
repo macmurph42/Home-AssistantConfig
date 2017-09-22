@@ -26,3 +26,4 @@
     #  entity_id: switch.itube_amp
     - service: switch.turn_on
       entity_id: switch.macmini
+    - service: rest_command.mozart225_playlist

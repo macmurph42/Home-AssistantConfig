@@ -22,3 +22,7 @@
       url: http://192.168.0.13:8181/playlists/bestofsleep/play
       method:  PUT
       payload: '{"shuffle":true}'
+  bestofsade_playlist:
+      url: http://192.168.0.13:8181/playlists/bestofsade/play
+      method:  PUT
+      payload: '{"shuffle":true}'

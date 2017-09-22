@@ -27,3 +27,8 @@
     alias: "BestOf Sleep Shuffle"
     sequence:
       - service: rest_command.bestofsleep_playlist
+
+  bestofsade_shuffle:
+    alias: "BestOf Sade Shuffle"
+    sequence:
+      - service: rest_command.bestofsade_playlist
